@@ -1,0 +1,48 @@
+[user]
+	name = BAMTEFA Olorunshogo Moses
+	email = shownzy001@gmail.com
+[core]
+	editor = code --wait
+	fsmonitor = true
+	ignorecase = true
+	autocrif = input
+	excludesfile = /home/olorunshogo/.gitignore_global
+	compression = 9
+	autocrlf = input
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
+[help]
+	autocorrect = 1
+[alias]
+	lg = log --graph --oneline --decorate --all
+	st = status
+	co = checkout
+	br = branch
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
+[credential]
+	helper = store
+[fetch]
+	prune = true
+[pull]
+	ff = only
+	rebase = true
+[gc]
+	auto = 256
+[push]
+	default = simple
+[branch "main"]
+	pushRemote = origin
+	mergeoptions = --no-ff
+[rebase]
+	autoStash = true
+[color "status"]
+	untracked = red
