@@ -1,10 +1,16 @@
 ###############################################
 # GIT FULL SETUP SCRIPT
-###############################################
+################################################ Check if the script is run as root (for apt install) or not
 
 # --- Identity ---
+echo "Setting Git username and email..."
+
 git config --global user.name "BAMTEFA Olorunshogo Moses"
 git config --global user.email "shownzy001@gmail.com"
+
+# Check if the values are applied
+git config --global user.name
+git config --global user.email
 
 # --- Default settings ---
 git config --global init.defaultBranch main
@@ -35,7 +41,7 @@ git config --global pull.rebase true
 git config --global rebase.autoStash true
 
 # --- Ignore case (Windows/Mac recommended) ---
-git config --global core.ignorecase true
+git config --global core.ignorecase false
 
 # --- Credentials management ---
 # Windows
@@ -69,4 +75,6 @@ git config --global merge.tool vscode
 git config --global mergetool.vscode.cmd "code --wait \$MERGED"
 
 echo "Git configuration completed successfully!"
+echo "Make sure to configure VS Code and other necessary tools manually."
+
 ###############################################
