@@ -124,7 +124,7 @@ git config --global mergetool.vscode.cmd "code --wait \$MERGED"
 
 # Extra useful settings
 git config --global core.quotePath false
-git config --global merge.conflictstyle zdiff3
+git config --global merge.conflictstyle merging
 git config --global rerere.enabled true
 
 # Global gitignore
